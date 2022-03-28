@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Secret Formula</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>The Alerter</h1>
+    <div>What would you like to say?</div>
+    <form id="form1">
+        <div>
+            <input type="text" id="inputText" autocomplete="off">
+            <input type="submit">
+        </div>
+    </form>
+
+    <h1>Sandwich Builder</h1>
+    <div>What ingredients would you want for your sandwich?</div>
+    <form id="sandwich">
+        <div>
+            <input type="checkbox" name="ingredients" id="cheddar" value="Cheddar Cheese">
+            Cheddar Cheese
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="parmesan" value="Parmesan Cheese">
+            Parmesan Cheese
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="sausage" value="Sausage">
+            Sausage
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="bacon" value="Bacon">
+            Bacon
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="lettuce" value="Lettuce">
+            Lettuce
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="chicken" value="Chicken">
+            Chicken
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="onions" value="Onions">
+            Onions
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="peppers" value="Peppers">
+            Peppers
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="mayo" value="Mayo">
+            Mayo
+        </div>
+        <div>
+            <input type="checkbox" name="ingredients" id="pickles" value="Pickles">
+            Pickles
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <h1>Haircut Appointment Scheduler</h1>
+    <div>Please provide details below: </div>
+    <form id="haircut">
+        <div>Appointment Date:
+            <input type="date" id="schedule">
+        </div>
+        <div>Preferred stylist:
+            <input type="text" id="stylist" autocomplete="off">
+        </div>
+        <div>Hair length: </div>
+        <div>
+            <input type="radio" name="length" id="long" checked>
+            Long
+        </div>
+        <div>
+            <input type="radio" name="length" id="short">
+            Short
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <h1>Create Account</h1>
+    <form id="account">
+        <div>Username
+            <input id="username" type="text" autocomplete="off">
+        </div>
+        <div>Email address
+            <input type="email" id="email" autocomplete="off">
+        </div>
+        <div>Password
+            <input type="password" id="pword">
+        </div>
+        <div>Confirm password
+            <input type="password" id="confirmPword">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+
+    <h1>User Login</h1>
+    <form id="login">
+        <div>Username <input type="text" id="unameLogin" autocomplete="off"></div>
+        <div>Password <input type="password" id="pwordLogin"></div>
+        <div><input type="submit"></div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,18 +1,22 @@
 const form1 = document.querySelector('#form1');
 const inputText = document.querySelector('#inputText');
 
-form1.addEventListener('submit', function () {
+form1.addEventListener('submit', function (event) {
+    event.preventDefault();
     alert(inputText.value);
+    inputText.value = '';
 });
 
 const sandwich = document.querySelector('#sandwich');
 const ingredients = document.getElementsByName('ingredients');
 
-sandwich.addEventListener('submit', function () {
+sandwich.addEventListener('submit', function (event) {
+    event.preventDefault();
     let choices = '';
     for (ingredient of ingredients) {
         if (ingredient.checked) {
             choices += `${ingredient.value}, `;
+            ingredient.checked = false;
         }
     }
     alert(`Your sandwich contains: ${choices.substring(0, choices.length - 2)}`);
@@ -23,9 +27,14 @@ const schedule = document.querySelector('#schedule');
 const stylist = document.querySelector('#stylist');
 const long = document.querySelector('#long');
 
-haircut.addEventListener('submit', function () {
+haircut.addEventListener('submit', function (event) {
+    event.preventDefault();
     let length = long.checked === true ? "long" : "short";
     alert(`Haircut schedulef for ${schedule.value} with ${stylist.value.toUpperCase()} for ${length.toUpperCase()} hair.`)
+
+    schedule.value = '';
+    stylist.value = '';
+    long.checked = true;
 });
 
 const account = document.querySelector('#account');
@@ -69,6 +78,8 @@ login.addEventListener('submit', function (event) {
         if (user.name == unameLogin.value) {
             if (user.password == pwordLogin.value) {
                 alert(`You have successfully logged in!`);
+                unameLogin.value = '';
+                pwordLogin.value = '';
                 return;
             } else {
                 alert(`Password is incorrect.`);

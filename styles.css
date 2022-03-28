@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: gainsboro;
+}
+
+div{
+    margin: 5px;
+}
+
+h1{
+    margin-top: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: cadetblue;
+}
+
+.form{
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.alerter {
+    background-color: antiquewhite;
+}
+
+.sandwich{
+    background-color: azure;
+}
+
+.haircut{
+    background-color: lavenderblush;
+}
+
+.create, .login{
+    background-color: beige;
+}
+
+label{
+    display: inline-block;
+    width: 130px;
+}
+
+.submit{
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: gray;
+    color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.submit:hover{
+    transform: scale(1.1);
+}
